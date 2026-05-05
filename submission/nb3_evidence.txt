@@ -1,0 +1,94 @@
+{
+  "health": {
+    "ready": true,
+    "n_docs": 1000
+  },
+  "sample": {
+    "query": "cloud computing t? ??ng m? r?ng",
+    "mode": "hybrid",
+    "top_k": 10,
+    "latency_ms": 29.651899996679276,
+    "hits": [
+      {
+        "doc_id": "cloud_016",
+        "title": "Điện toán đám mây: tự động mở rộng theo lưu lượng",
+        "text": "Theo khuyến nghị 2026, điện toán đám mây đòi hỏi phải tự động mở rộng theo lưu lượng. Các công cụ phổ biến gồm cloud, serverless, AWS. Khái niệm hạ tầng và không máy chủ là nền tảng quan trọng. Bài viết này giải thích cách tự động mở rộng theo lưu lượng một cách thực tế, kèm ví dụ minh hoạ với cloud và AWS.",
+        "score": 0.027271052146674038
+      },
+      {
+        "doc_id": "data_eng_011",
+        "title": "Data engineering: phân vùng theo ngày để tối ưu query",
+        "text": "Trong môi trường production hiện đại, data engineering đòi hỏi phải phân vùng theo ngày để tối ưu query. Các công cụ phổ biến gồm Kafka, dbt, schema evolution. Khái niệm kho dữ liệu và luồng dữ liệu là nền tảng quan trọng. Bài viết này giải thích cách phân vùng theo ngày để tối ưu query một cách thực tế, kèm ví dụ minh hoạ với Kafka và schema evolution.",
+        "score": 0.023411829134720702
+      },
+      {
+        "doc_id": "cloud_082",
+        "title": "Điện toán đám mây: quản lý vòng đời container",
+        "text": "Trong môi trường production hiện đại, điện toán đám mây đòi hỏi phải quản lý vòng đời container. Các công cụ phổ biến gồm cloud, Azure, container. Khái niệm đa người dùng và triển khai là nền tảng quan trọng. Bài viết này giải thích cách quản lý vòng đời container một cách thực tế, kèm ví dụ minh hoạ với cloud và container.",
+        "score": 0.01639344262295082
+      },
+      {
+        "doc_id": "data_eng_055",
+        "title": "Data engineering: xử lý sự kiện streaming với Kafka và Flink",
+        "text": "Trong môi trường production hiện đại, data engineering đòi hỏi phải xử lý sự kiện streaming với Kafka và Flink. Các công cụ phổ biến gồm Airflow, Spark, schema evolution. Khái niệm chuyển đổi và chất lượng dữ liệu là nền tảng quan trọng. Bài viết này giải thích cách xử lý sự kiện streaming với Kafka và Flink một cách thực tế, kèm ví dụ minh hoạ với Airflow và schema evolution.",
+        "score": 0.01639344262295082
+      },
+      {
+        "doc_id": "cloud_075",
+        "title": "Điện toán đám mây: quản lý vòng đời container",
+        "text": "Khi triển khai ở quy mô lớn, điện toán đám mây đòi hỏi phải quản lý vòng đời container. Các công cụ phổ biến gồm cloud, auto-scaling, Azure. Khái niệm đám mây và đa người dùng là nền tảng quan trọng. Bài viết này giải thích cách quản lý vòng đời container một cách thực tế, kèm ví dụ minh hoạ với cloud và Azure.",
+        "score": 0.016129032258064516
+      },
+      {
+        "doc_id": "data_eng_023",
+        "title": "Data engineering: xử lý sự kiện streaming với Kafka và Flink",
+        "text": "Khi triển khai ở quy mô lớn, data engineering đòi hỏi phải xử lý sự kiện streaming với Kafka và Flink. Các công cụ phổ biến gồm dbt, Spark, schema evolution. Khái niệm chuyển đổi và luồng dữ liệu là nền tảng quan trọng. Bài viết này giải thích cách xử lý sự kiện streaming với Kafka và Flink một cách thực tế, kèm ví dụ minh hoạ với dbt và schema evolution.",
+        "score": 0.016129032258064516
+      },
+      {
+        "doc_id": "cloud_037",
+        "title": "Điện toán đám mây: quản lý vòng đời container",
+        "text": "Tại các doanh nghiệp công nghệ Việt Nam, điện toán đám mây đòi hỏi phải quản lý vòng đời container. Các công cụ phổ biến gồm cloud, AWS, container. Khái niệm đám mây và đa người dùng là nền tảng quan trọng. Bài viết này giải thích cách quản lý vòng đời container một cách thực tế, kèm ví dụ minh hoạ với cloud và container.",
+        "score": 0.015873015873015872
+      },
+      {
+        "doc_id": "data_eng_057",
+        "title": "Data engineering: xử lý sự kiện streaming với Kafka và Flink",
+        "text": "Để tối ưu chi phí, data engineering đòi hỏi phải xử lý sự kiện streaming với Kafka và Flink. Các công cụ phổ biến gồm Iceberg, Spark, Delta Lake. Khái niệm luồng dữ liệu và kho dữ liệu là nền tảng quan trọng. Bài viết này giải thích cách xử lý sự kiện streaming với Kafka và Flink một cách thực tế, kèm ví dụ minh hoạ với Iceberg và Delta Lake.",
+        "score": 0.015873015873015872
+      },
+      {
+        "doc_id": "cloud_090",
+        "title": "Điện toán đám mây: cấu hình mạng VPC riêng biệt",
+        "text": "Trong môi trường production hiện đại, điện toán đám mây đòi hỏi phải cấu hình mạng VPC riêng biệt. Các công cụ phổ biến gồm cloud, Lambda, Azure. Khái niệm hạ tầng và đám mây là nền tảng quan trọng. Bài viết này giải thích cách cấu hình mạng VPC riêng biệt một cách thực tế, kèm ví dụ minh hoạ với cloud và Azure.",
+        "score": 0.015625
+      },
+      {
+        "doc_id": "data_eng_079",
+        "title": "Data engineering: xử lý sự kiện streaming với Kafka và Flink",
+        "text": "Khi triển khai ở quy mô lớn, data engineering đòi hỏi phải xử lý sự kiện streaming với Kafka và Flink. Các công cụ phổ biến gồm Iceberg, Airflow, Flink. Khái niệm kho dữ liệu và chuyển đổi là nền tảng quan trọng. Bài viết này giải thích cách xử lý sự kiện streaming với Kafka và Flink một cách thực tế, kèm ví dụ minh hoạ với Iceberg và Flink.",
+        "score": 0.015625
+      }
+    ]
+  },
+  "results": {
+    "keyword": {
+      "p50_server": 2.4094000000332016,
+      "p95_server": 5.043200002546655,
+      "p99_server": 6.4395000008516945,
+      "p99_wall": 9.633499998017214
+    },
+    "semantic": {
+      "p50_server": 15.48989999719197,
+      "p95_server": 24.39289999892935,
+      "p99_server": 26.961400002619484,
+      "p99_wall": 29.426899996906286
+    },
+    "hybrid": {
+      "p50_server": 19.374499999685213,
+      "p95_server": 27.23870000045281,
+      "p99_server": 32.58149999965099,
+      "p99_wall": 35.57150000051479
+    }
+  }
+}

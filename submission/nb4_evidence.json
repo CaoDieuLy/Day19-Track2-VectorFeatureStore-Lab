@@ -1,0 +1,19 @@
+{
+  "run_dir": "C:\\Users\\admin\\AppData\\Local\\Temp\\lab19_feast_run",
+  "p50": 10.926700000709388,
+  "p95": 15.994099998351885,
+  "p99": 17.021899999235757,
+  "features": {
+    "user_id": "u_001",
+    "reading_speed_wpm": 187,
+    "preferred_language": "vi",
+    "topic_affinity": "cloud",
+    "queries_last_hour": 11,
+    "distinct_topics_24h": 4
+  },
+  "historical_csv": "user_id,event_timestamp,reading_speed_wpm,topic_affinity\r\nu_003,2026-05-05 11:09:58+00:00,201,database\r\nu_002,2026-05-05 11:09:58+00:00,194,security\r\nu_001,2026-05-05 11:09:58+00:00,187,cloud\r\n",
+  "historical_shape": [
+    3,
+    4
+  ]
+}

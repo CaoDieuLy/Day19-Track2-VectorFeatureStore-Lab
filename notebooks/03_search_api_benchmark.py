@@ -15,6 +15,7 @@
 
 # %%
 import _setup  # noqa: F401
+import sys
 import statistics
 import subprocess
 import time
@@ -30,13 +31,21 @@ import httpx
 
 # %%
 ROOT = Path(_setup.__file__).resolve().parent.parent
-proc = subprocess.Popen(
-    ["uvicorn", "app.main:app", "--port", "8000", "--log-level", "warning"],
-    cwd=str(ROOT),
-)
+URL = "http://localhost:8000"
+
+proc = None
+try:
+    already_ready = httpx.get(f"{URL}/healthz", timeout=2.0).json().get("ready", False)
+except httpx.HTTPError:
+    already_ready = False
+
+if not already_ready:
+    proc = subprocess.Popen(
+        [sys.executable, "-m", "uvicorn", "app.main:app", "--port", "8000", "--log-level", "warning"],
+        cwd=str(ROOT),
+    )
 
 # Đợi server up + warm (Searcher.from_corpus loads embeddings + indexes 1000 docs)
-URL = "http://localhost:8000"
 for _ in range(60):
     try:
         r = httpx.get(f"{URL}/healthz", timeout=2.0)
@@ -127,9 +136,12 @@ else:
 # ## 5. Cleanup — stop the API server
 
 # %%
-proc.terminate()
-proc.wait(timeout=5)
-print("API server stopped")
+if proc is not None:
+    proc.terminate()
+    proc.wait(timeout=5)
+    print("API server stopped")
+else:
+    print("API server was already running; left it untouched")
 
 # %% [markdown]
 # ## Deliverable evidence

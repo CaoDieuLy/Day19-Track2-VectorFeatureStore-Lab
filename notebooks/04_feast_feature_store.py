@@ -16,16 +16,47 @@
 
 # %%
 import _setup  # noqa: F401
+import os
+import shutil
 import subprocess
+import tempfile
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import polars as pl
 
 REPO_ROOT = Path(_setup.__file__).resolve().parent.parent
-FEAST_DIR = REPO_ROOT / "app" / "feast_repo"
+SOURCE_FEAST_DIR = REPO_ROOT / "app" / "feast_repo"
+
+# Windows workspaces can have ACLs that allow writes but deny SQLite journal
+# deletes. In that case Feast runs from a temp repo, while Unix-like systems use
+# the repo directory exactly as in the lab handout.
+if os.name == "nt":
+    FEAST_DIR = Path(tempfile.gettempdir()) / "lab19_feast_run"
+    if FEAST_DIR.exists():
+        shutil.rmtree(FEAST_DIR)
+    FEAST_DIR.mkdir(parents=True)
+    shutil.copy2(SOURCE_FEAST_DIR / "feature_views.py", FEAST_DIR / "feature_views.py")
+    (FEAST_DIR / "feature_store.yaml").write_text(
+        """project: lab19
+provider: local
+registry: registry.db
+online_store:
+  type: sqlite
+  path: online_store.db
+offline_store:
+  type: file
+entity_key_serialization_version: 3
+""",
+        encoding="utf-8",
+    )
+else:
+    FEAST_DIR = SOURCE_FEAST_DIR
+
 FEAST_DATA = FEAST_DIR / "data"
 FEAST_DATA.mkdir(exist_ok=True)
+os.environ["PROMETHEUS_MULTIPROC_DIR"] = str(FEAST_DIR / "metrics")
+(FEAST_DIR / "metrics").mkdir(exist_ok=True)
 
 # %% [markdown]
 # ## 1. Sinh dữ liệu offline (Parquet) cho 3 feature views
@@ -185,7 +216,7 @@ else:
 import pandas as pd
 entity_df = pd.DataFrame({
     "user_id": ["u_001", "u_002", "u_003"],
-    "event_timestamp": [NOW - timedelta(hours=2), NOW - timedelta(hours=1), NOW],
+    "event_timestamp": [NOW, NOW, NOW],
 })
 
 historical = fs.get_historical_features(

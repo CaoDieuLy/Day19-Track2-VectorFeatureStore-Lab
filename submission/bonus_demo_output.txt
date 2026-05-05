@@ -1,0 +1,40 @@
+﻿==============================================================================
+Query 1: Tôi đã đọc gì về Kubernetes?
+User profile: language=vi, reading_speed=220wpm, topic_affinity=cloud.
+Recent activity: queries_last_hour=1, recent_topics=kubernetes.
+Top memories:
+- Tôi đã đọc một ghi chú về Kubernetes autoscaling: HPA tăng số pod theo CPU, còn cluster autoscaler tăng node khi thiếu tài nguyên.
+- Tôi thích tài liệu tiếng Việt ngắn, có ví dụ thực tế, đặc biệt về cloud, DevOps và AI platform.
+- Một bài về tự động mở rộng hạ tầng giải thích cách scale theo lưu lượng người dùng và giữ latency ổn định sau warmup.
+==============================================================================
+Query 2: Recommend đọc gì tiếp
+User profile: language=vi, reading_speed=220wpm, topic_affinity=cloud.
+Recent activity: queries_last_hour=2, recent_topics=kubernetes.
+Top memories:
+- Tôi đã đọc một ghi chú về Kubernetes autoscaling: HPA tăng số pod theo CPU, còn cluster autoscaler tăng node khi thiếu tài nguyên.
+- Một bài về tự động mở rộng hạ tầng giải thích cách scale theo lưu lượng người dùng và giữ latency ổn định sau warmup.
+- Ghi chú gần đây: hybrid search kết hợp BM25 với vector search bằng RRF để xử lý query mixed Việt Anh tốt hơn.
+==============================================================================
+Query 3: Tôi đang quan tâm gì gần đây?
+User profile: language=vi, reading_speed=220wpm, topic_affinity=cloud.
+Recent activity: queries_last_hour=3, recent_topics=kubernetes.
+Top memories:
+- Ghi chú gần đây: hybrid search kết hợp BM25 với vector search bằng RRF để xử lý query mixed Việt Anh tốt hơn.
+- Tôi thích tài liệu tiếng Việt ngắn, có ví dụ thực tế, đặc biệt về cloud, DevOps và AI platform.
+- Tôi đã đọc một ghi chú về Kubernetes autoscaling: HPA tăng số pod theo CPU, còn cluster autoscaler tăng node khi thiếu tài nguyên.
+==============================================================================
+Query 4: Tài liệu về tự động mở rộng hạ tầng?
+User profile: language=vi, reading_speed=220wpm, topic_affinity=cloud.
+Recent activity: queries_last_hour=4, recent_topics=kubernetes.
+Top memories:
+- Một bài về tự động mở rộng hạ tầng giải thích cách scale theo lưu lượng người dùng và giữ latency ổn định sau warmup.
+- Tôi thích tài liệu tiếng Việt ngắn, có ví dụ thực tế, đặc biệt về cloud, DevOps và AI platform.
+- Tôi đã đọc một ghi chú về Kubernetes autoscaling: HPA tăng số pod theo CPU, còn cluster autoscaler tăng node khi thiếu tài nguyên.
+==============================================================================
+Query 5: Cho tôi summary cloud security
+User profile: language=vi, reading_speed=220wpm, topic_affinity=cloud.
+Recent activity: queries_last_hour=5, recent_topics=security, cloud, kubernetes.
+Top memories:
+- Cloud security checklist gồm IAM least privilege, secret rotation, network policy, audit log và mã hóa dữ liệu ở trạng thái nghỉ.
+- Tôi thích tài liệu tiếng Việt ngắn, có ví dụ thực tế, đặc biệt về cloud, DevOps và AI platform.
+- Tôi đã đọc một ghi chú về Kubernetes autoscaling: HPA tăng số pod theo CPU, còn cluster autoscaler tăng node khi thiếu tài nguyên.
